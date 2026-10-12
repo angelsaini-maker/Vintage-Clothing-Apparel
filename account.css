@@ -1,0 +1,340 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background: rgb(255, 228, 228);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 125px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff523b;
+}
+
+
+/* ================= ACCOUNT ================= */
+
+.account {
+    min-height: 650px;
+    background: #f7f7f7;
+    padding: 70px 20px;
+}
+
+.account-container {
+    max-width: 450px;
+    margin: auto;
+}
+
+.account-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.account-card h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.account-card h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.account-text {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+
+/* ================= FORM ================= */
+
+.account-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-card label {
+    color: #333;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.account-card input {
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.account-card input:focus {
+    border-color: #ff523b;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    border: none;
+    background: #ff523b;
+    color: #fff;
+    padding: 11px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+
+/* ================= FORGOT ================= */
+
+.forgot {
+    text-align: center;
+    color: #ff523b;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+
+/* ================= DIVIDER ================= */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    background: #ddd;
+    flex: 1;
+}
+
+
+/* ================= CREATE ACCOUNT ================= */
+
+.create-btn {
+    display: block;
+    text-align: center;
+    border: 1px solid #ff523b;
+    color: #ff523b;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.create-btn:hover {
+    background: #ff523b;
+    color: #fff;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+    flex-basis: 30%;
+    padding: 15px;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #8a8a8a;
+}
+
+.footer ul li a:hover {
+    color: #ff523b;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #444;
+    margin: 30px 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 800px) {
+
+    .navbar ul li {
+        margin-right: 10px;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        flex-basis: 50%;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .account {
+        padding: 40px 15px;
+    }
+
+    .account-card {
+        padding: 30px 20px;
+    }
+
+    .account-card h1 {
+        font-size: 28px;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,334 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+
+/* ================= ROW ================= */
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background: rgb(255, 228, 228);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 125px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff523b;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 80px 0;
+}
+
+.about-image {
+    flex-basis: 45%;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.about-content {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+.about-content h1 {
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+
+/* ================= MISSION ================= */
+
+.mission {
+    background: rgb(255, 228, 228);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.mission h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-us {
+    padding: 70px 0;
+}
+
+.title {
+    text-align: center;
+    color: #555;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature {
+    flex-basis: 30%;
+    min-width: 250px;
+    padding: 30px 20px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer .row {
+    align-items: flex-start;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+    flex-basis: 30%;
+    padding: 15px;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #8a8a8a;
+}
+
+.footer ul li a:hover {
+    color: #ff523b;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #444;
+    margin: 30px 0 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 800px) {
+
+    .navbar ul li {
+        margin-right: 10px;
+    }
+
+    .about-image,
+    .about-content {
+        flex-basis: 50%;
+    }
+
+    .feature {
+        flex-basis: 45%;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 600px) {
+
+    .container,
+    .small-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .about {
+        padding: 45px 0;
+    }
+
+    .about-image,
+    .about-content {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .mission {
+        padding: 45px 20px;
+    }
+
+    .feature {
+        flex-basis: 100%;
+        min-width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
